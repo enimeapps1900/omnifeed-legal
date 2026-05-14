@@ -1,0 +1,95 @@
+:root {
+  --indigo: #473BD8;
+  --ink: #1a1a22;
+  --muted: #5b5b6b;
+  --bg: #ffffff;
+  --card: #f5f5fa;
+  --border: #e3e3ec;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.mark {
+  width: 40px; height: 40px;
+  border-radius: 11px;
+  background: var(--indigo);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 20px;
+}
+header.site h1 { font-size: 20px; margin: 0; }
+header.site span { color: var(--muted); font-size: 13px; }
+h1.page { font-size: 28px; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+.updated { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+a { color: var(--indigo); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 16px 0;
+}
+.note { color: var(--muted); font-size: 14px; }
+.btn {
+  display: inline-block;
+  background: var(--indigo);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+label { display: block; font-weight: 600; margin: 14px 0 4px; font-size: 14px; }
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+  background: #fff;
+}
+textarea { min-height: 90px; resize: vertical; }
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+nav.docs { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+nav.docs a {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e9e9f0; --muted: #a0a0b0; --bg: #14141b;
+    --card: #1e1e28; --border: #2e2e3c;
+  }
+  input, textarea { background: #14141b; color: var(--ink); }
+}

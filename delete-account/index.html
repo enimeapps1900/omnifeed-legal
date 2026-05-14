@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete my data — Omnifeed</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="mark">O</div>
+      <div>
+        <h1>Omnifeed</h1>
+        <span>Your social feeds, in one place</span>
+      </div>
+    </header>
+
+    <h1 class="page">Delete my data</h1>
+    <p class="updated">How to remove your data from Omnifeed</p>
+
+    <h2>Most of your data is already under your control</h2>
+    <p>Omnifeed has no user accounts and no server that stores your content.
+      Your connected-account tokens, drafts, and settings live <strong>only on
+      your device</strong>. You can remove them yourself at any time:</p>
+    <ul>
+      <li><strong>Disconnect an account</strong> — open the App and go to
+        <em>Settings &rarr; Privacy</em>, then disconnect any account. Its
+        token is wiped from your device immediately.</li>
+      <li><strong>Remove everything</strong> — uninstalling the App deletes all
+        on-device data (tokens, drafts, settings).</li>
+    </ul>
+
+    <h2>Request deletion of diagnostic data</h2>
+    <p>The only data we hold off your device is <strong>anonymous</strong>
+      crash and usage diagnostics (see our
+      <a href="../privacy/">Privacy Policy</a>). It is not linked to your
+      identity, but you can still ask us to delete the diagnostic data
+      associated with your device's anonymous installation ID. Use the form
+      below or email <a href="mailto:lflifli7@gmail.com">lflifli7@gmail.com</a>.</p>
+
+    <div class="card">
+      <form action="mailto:lflifli7@gmail.com" method="post" enctype="text/plain">
+        <label for="email">Your email (so we can confirm)</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="installid">Installation ID (optional)</label>
+        <input type="text" id="installid" name="Installation_ID"
+               placeholder="Settings → Privacy → About, if shown">
+
+        <label for="details">Anything else you'd like deleted</label>
+        <textarea id="details" name="Details"
+                  placeholder="e.g. please delete all diagnostic data for my device"></textarea>
+
+        <input type="hidden" name="Request" value="Omnifeed data deletion request">
+        <button type="submit" class="btn">Send deletion request</button>
+      </form>
+      <p class="note" style="margin-top:14px;">
+        This opens your email app with the request pre-filled. If the button
+        doesn't work, just email
+        <a href="mailto:lflifli7@gmail.com?subject=Omnifeed%20data%20deletion%20request">lflifli7@gmail.com</a>
+        with the subject "Omnifeed data deletion request".
+      </p>
+    </div>
+
+    <p>We respond to deletion requests within <strong>30 days</strong>.</p>
+
+    <footer>
+      <a href="../">&larr; Omnifeed legal</a> &nbsp;·&nbsp;
+      <a href="../privacy/">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="../terms/">Terms of Service</a><br>
+      &copy; 2026 AF APPS. Omnifeed is not affiliated with any social network.
+    </footer>
+  </div>
+</body>
+</html>
